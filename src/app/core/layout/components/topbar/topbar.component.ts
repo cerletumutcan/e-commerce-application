@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { StyleClassModule } from 'primeng/styleclass';
 import { ConfiguratorComponent } from '../configurator/configurator.component';
-import { LayoutService } from '../../../services/layout.service';
+import { LayoutService } from '../../../services/layout/layout.service';
 import { state } from '@angular/animations';
 
 @Component({

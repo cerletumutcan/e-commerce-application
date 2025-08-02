@@ -6,7 +6,7 @@ import { filter } from 'rxjs/operators';
 import { CommonModule } from '@angular/common';
 import { RippleModule } from 'primeng/ripple';
 import { MenuItem } from 'primeng/api';
-import { LayoutService } from '../../../services/layout.service';
+import { LayoutService } from '../../../services/layout/layout.service';
 
 @Component({
   selector: '[app-menuitem]',
@@ -15,18 +15,8 @@ import { LayoutService } from '../../../services/layout.service';
   styleUrl: './menuitem.component.scss',
   animations: [
     trigger('children', [
-      state(
-        'collapsed',
-        style({
-          height: '0'
-        })
-      ),
-      state(
-        'expanded',
-        style({
-          height: '*'
-        })
-      ),
+      state('collapsed', style({ height: '0'})),
+      state('expanded', style({ height: '*'})),
       transition('collapsed <=> expanded', animate('400ms cubic-bezier(0.86, 0, 0.07, 1)'))
     ])
   ],
