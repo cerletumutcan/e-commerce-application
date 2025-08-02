@@ -6,7 +6,8 @@ import { CheckboxModule } from 'primeng/checkbox';
 import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
 import { RippleModule } from 'primeng/ripple'; 
-import { FloatingconfiguratorComponent } from '../../../../shared/components/floatingconfigurator/floatingconfigurator.component';
+import { FloatingconfiguratorComponent } from '../../../../core/layout/components/floatingconfigurator/floatingconfigurator.component';
+import { LayoutService } from '../../../../core/services/layout.service';
 
 @Component({
   selector: 'app-login',
